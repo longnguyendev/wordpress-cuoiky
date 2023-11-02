@@ -105,7 +105,7 @@ add_action('wp_enqueue_scripts', 'enqueue_bootstrap_js');
 // Function to enqueue Font Awesome CSS
 function enqueue_font_awesome_css()
 {
-	wp_enqueue_style('font-awesome-css', 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css', array(), '6.2.1', 'all');
+	wp_enqueue_style('font-awesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', array(), '6.2.1', 'all');
 }
 add_action('wp_enqueue_scripts', 'enqueue_font_awesome_css');
 
