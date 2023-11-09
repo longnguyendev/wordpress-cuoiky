@@ -1,0 +1,30 @@
+.module-5 img {
+  aspect-ratio: 1 / 1;
+  height: unset !important;
+}
+
+.module-5 .content-wrap {
+  padding: 0 !important;
+  padding-left: 20px !important;
+}
+
+.module-5 article {
+  box-shadow: unset !important;
+  margin-bottom: unset !important;
+}
+
+.module-5 .entry-title {
+  font-size: 1rem !important;
+}
+
+.module-5 .readmore-link {
+  color: orangered;
+}
+
+.module-5 p {
+  font-size: 13px !important;
+}
+
+.module-5 a {
+  font-size: 14px !important;
+}
