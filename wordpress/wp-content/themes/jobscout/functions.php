@@ -120,3 +120,21 @@ function enqueue_custom_style()
 	wp_enqueue_style('custom-style-module-5', get_template_directory_uri() . '/css/style-module-5.css', array(), '1.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_style');
+
+
+
+// Bạn có thể tùy chỉnh bộ lọc get_the_excerpt bằng cách sử dụng một hàm trong file functions.php của theme hoặc plugin WordPress của bạn. Dưới đây là cách bạn có thể làm điều này:
+
+// php
+// Copy code
+function custom_get_the_excerpt($excerpt)
+{
+	// Tùy chỉnh nội dung tóm tắt ở đây
+	// $excerpt là nội dung tóm tắt gốc
+	// $post là đối tượng bài viết
+
+	// Ví dụ: Giới hạn độ dài của tóm tắt thành 50 từ
+	$excerpt = wp_trim_words($excerpt, 10);
+
+	return $excerpt;
+}
