@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #ea751e;
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
 a {
   text-decoration: none;
 }

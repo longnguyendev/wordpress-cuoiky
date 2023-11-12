@@ -663,8 +663,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: #fff;
   font-weight: 700;
 
@@ -682,7 +682,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background: none;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 button:focus,
@@ -769,7 +769,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #2ace5e;
+  color: var(--primary-color);
   text-decoration: none;
   -webkit-transition: all ease 0.35s;
   -moz-transition: all ease 0.35s;
@@ -1120,8 +1120,8 @@ body.custom-background .site {
 
 a.btn {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: #fff;
   font-weight: 700;
 
@@ -1133,7 +1133,7 @@ a.btn {
 a.btn:hover,
 a.btn:focus {
   background: none;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 a.btn:focus {
@@ -1203,7 +1203,7 @@ figure.post-thumbnail {
 }
 
 .entry-meta>span a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .entry-title a {
@@ -1212,7 +1212,7 @@ figure.post-thumbnail {
 }
 
 .entry-title a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .entry-footer a+.edit-link {
@@ -1250,7 +1250,7 @@ form.search-form input.search-submit {
   border-radius: 0 5px 5px 0;
   border: none;
   color: #fff;
-  background: #2ace5e url(images/search-icon.svg);
+  background: var(--primary-color) url(images/search-icon.svg);
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1341,7 +1341,7 @@ form.search-form input.search-submit:focus {
 .widget-area .widget ul li a:hover,
 .widget-area .widget ol li a:hover,
 .site-footer .widget ul li a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .site-content>header.page-header {
@@ -1454,9 +1454,9 @@ PAGINATION
 
 .navigation.pagination .page-numbers:not(.dots):hover,
 .navigation.pagination .page-numbers.current:not(.dots) {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
-  border-color: #2ace5e;
+  border-color: var(--primary-color);
 }
 
 .post-navigation {
@@ -1495,7 +1495,7 @@ PAGINATION
 }
 
 .post-navigation .nav-links a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .post-navigation .nav-links a::before {
@@ -1546,9 +1546,9 @@ PAGINATION
 }
 
 .posts-navigation .nav-links a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
-  border-color: #2ace5e;
+  border-color: var(--primary-color);
 }
 
 .posts-navigation .nav-links a:before {
@@ -1596,8 +1596,8 @@ PAGINATION
 
 #load-posts a.loading,
 #load-posts a:hover {
-  background: #2ace5e;
-  border-color: #2ace5e;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
   color: #fff;
   text-decoration: none;
 }
@@ -1608,9 +1608,9 @@ PAGINATION
 }
 
 #load-posts a.disabled {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
-  border-color: #2ace5e;
+  border-color: var(--primary-color);
   opacity: 0.6;
   cursor: not-allowed;
 }
@@ -1674,11 +1674,11 @@ COMMENTS AREA
 }
 
 .comment-body b.fn a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .bypostauthor>.comment-body b.fn {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .bypostauthor>.comment-body b.fn a:hover {
@@ -1706,7 +1706,7 @@ COMMENTS AREA
 }
 
 .comment-body .comment-metadata a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .comment-body .comment-awaiting-moderation {
@@ -1744,7 +1744,7 @@ COMMENTS AREA
 }
 
 .comment-body .reply a.comment-reply-link:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .comment-respond {
@@ -1769,7 +1769,7 @@ COMMENTS AREA
 }
 
 .comment-respond .comment-reply-title a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .comment-respond form.comment-form {
@@ -1988,7 +1988,7 @@ figure.author-img {
 }
 
 .author-content ul.social-list li a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 /*=========================
@@ -2004,7 +2004,7 @@ HEADER T SECTION
 }
 
 .site-header .header-t a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .header-t .left-block {
@@ -2038,7 +2038,7 @@ HEADER T SECTION
 .secondary-nav ul li.current_page_item>a,
 .secondary-nav ul li.current-menu-ancestor>a,
 .secondary-nav ul li.current_page_ancestor>a {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .secondary-nav ul.nav-menu>li:first-child>a {
@@ -2172,7 +2172,7 @@ body.home:not(.banner-enabled) .site-header {
 }
 
 .site-branding .site-title a {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .site-branding .site-description {
@@ -2220,7 +2220,7 @@ body.home:not(.banner-enabled) .site-header {
 .main-navigation ul li.current_page_item>a,
 .main-navigation ul li.current-menu-ancestor>a,
 .main-navigation ul li.current_page_ancestor>a {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .main-navigation ul li ul {
@@ -2638,7 +2638,7 @@ section.top-job-section .section-title {
 
 .top-job-section .row div.job_listings article .salary-amt .currency {
   font-weight: 900;
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-right: 5px;
 }
 
@@ -2650,7 +2650,7 @@ section.top-job-section .section-title {
 }
 
 .top-job-section .row div.job_listings article .company-address svg {
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-right: 5px;
 }
 
@@ -2659,7 +2659,7 @@ section.top-job-section .section-title {
 }
 
 .top-job-section .row div.job_listings article .entry-meta a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .job-manager li.job-type,
@@ -2671,10 +2671,10 @@ section.top-job-section .section-title {
   letter-spacing: 1px;
   font-weight: 700;
   display: inline-block;
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
   border-radius: 40px;
   padding: 5px 20px;
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-top: 10px;
   cursor: default;
 }
@@ -2713,16 +2713,16 @@ section.top-job-section .section-title {
   font-size: 0.8888em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #2ace5e;
+  background: var(--primary-color);
   border-radius: 5px;
   color: #fff;
   padding: 12px 20px 12px 45px;
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
   position: relative;
 }
 
 .top-job-section div.job_listings .load_more_jobs:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
   background: none;
 }
 
@@ -2803,7 +2803,7 @@ section.howitwork-section {
   width: 100px;
   height: 100px;
   text-align: center;
-  background: #2ace5e;
+  background: var(--primary-color);
   overflow: hidden;
   color: #fff;
   position: relative;
@@ -3121,7 +3121,7 @@ SITE FOOTER SECTION
 }
 
 .footer-b a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .footer-b .privacy-block {
@@ -3174,7 +3174,7 @@ SITE FOOTER SECTION
 }
 
 #back-to-top span:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
 }
 
 #back-to-top svg {
@@ -3337,7 +3337,7 @@ CONTACT PAGE
 }
 
 .page-template-contact .site-main .contact-info ul.contact-list li a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .page-template-contact .site-main .widget_rtc_contact_social_links .contact-list+.social-networks {
@@ -3356,7 +3356,7 @@ CONTACT PAGE
 }
 
 .page-template-contact .widget_rtc_contact_social_links .social-networks li a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -3476,7 +3476,7 @@ SINGLE PAGE
 }
 
 .single .site-main footer.entry-footer a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .single .site-main footer.entry-footer .job-share {
@@ -3544,7 +3544,7 @@ SINGLE PAGE
 }
 
 .single .site-main footer.entry-footer a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .single .entry-footer .tags {
@@ -3593,13 +3593,13 @@ SINGLE PAGE
 }
 
 a:hover path.fav {
-  fill: #2ace5e;
-  stroke: #2ace5e;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
 }
 
 .liked .fav {
-  fill: #2ace5e;
-  stroke: #2ace5e;
+  fill: var(--primary-color);
+  stroke: var(--primary-color);
   opacity: 1;
 }
 
@@ -3740,8 +3740,8 @@ SINGLE JOB PAGE
   display: inline-block;
   font-size: 0.7778em;
   font-weight: 700;
-  color: #2ace5e;
-  border: 1px solid #2ace5e;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 40px;
   padding: 5px 20px;
   cursor: default;
@@ -3784,12 +3784,12 @@ SINGLE JOB PAGE
 .single-job .site-content .job-title-wrap .job-type .btn,
 .error404 .additional-posts .entry-meta .job-type .btn {
   display: inline-block;
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
   border-radius: 40px;
   font-size: 0.778em;
   font-weight: 700;
   padding: 7px 20px 5px 20px;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .single-job .site-content .entry-header .job-title-wrap .entry-meta {
@@ -3816,7 +3816,7 @@ SINGLE JOB PAGE
 .single-job .site-content .job-title-wrap .entry-meta>div .fas,
 .error404 .additional-posts .entry-meta>div .currency,
 .error404 .additional-posts .entry-meta>div .fas {
-  color: #2ace5e;
+  color: var(--primary-color);
   font-weight: 800;
   margin-right: 3px;
 }
@@ -3878,7 +3878,7 @@ SINGLE JOB PAGE
 }
 
 .single-job .site-content .site-main .entry-content ul.job-listing-meta li a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .single-job_listing .site-main .single_job_listing .company {
@@ -3975,7 +3975,7 @@ SINGLE JOB PAGE
 
 .single-job .additional-posts .article-wrap .job-title-wrap .entry-meta svg,
 .error404 .additional-posts .entry-meta svg {
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-right: 10px;
 }
 
@@ -4218,7 +4218,7 @@ SINGLE JOB PAGE
 }
 
 .single-job .site-main .entry-footer .job-print a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -4279,7 +4279,7 @@ SINGLE JOB PAGE
 }
 
 .single-job .additional-posts .article-wrap .job-title-wrap .entry-title a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .single-job .additional-posts .article-wrap .job-title-wrap .company-name,
@@ -4345,7 +4345,7 @@ JOB OVERVIEW
 
 .job-location .job-loc-map a {
   font-weight: 600;
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
   padding: 15px 30px;
   display: inline-block;
@@ -4373,7 +4373,7 @@ JOB OVERVIEW
   display: inline-block;
   vertical-align: top;
   width: 40px;
-  color: #2ace5e;
+  color: var(--primary-color);
   font-size: 2em;
   position: absolute;
   top: 50%;
@@ -4409,11 +4409,11 @@ JOB OVERVIEW
 .job-overview .overview-wrap a.btn+a.btn {
   margin-top: 10px;
   background: none;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .job-overview .overview-wrap a.btn+a.btn:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -4708,8 +4708,8 @@ WIDGET CALL TO ACTION
 
 .widget_raratheme_companion_cta_widget a.btn-cta {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   color: #fff;
   font-weight: 700;
   margin: 5px;
@@ -4720,7 +4720,7 @@ WIDGET CALL TO ACTION
 
 .widget_raratheme_companion_cta_widget a.btn-cta:hover {
   background: none;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .widget_raratheme_companion_cta_widget .text a.btn-cta {
@@ -4769,7 +4769,7 @@ WIDGET ICON TEXT
 
 a.btn-readmore {
   display: inline-block;
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
   font-weight: 800;
   font-size: 0.778em;
@@ -4792,7 +4792,7 @@ a.btn-readmore:hover {
   display: flex;
   flex: auto;
   flex-direction: column;
-  background: #2ace5e;
+  background: var(--primary-color);
   position: relative;
   align-items: center;
   justify-content: center;
@@ -4866,7 +4866,7 @@ WIDGET CATEGORY SLIDER
 }
 
 .widget_rara_posts_category_slider_widget .carousel-title .title a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .widget_rara_posts_category_slider_widget .owl-carousel .owl-nav [class*="owl-"] {
@@ -4919,7 +4919,7 @@ WIDGET TAG CLOUD
 }
 
 .tagcloud a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -4957,7 +4957,7 @@ WIDGET RECENT POST & POPULAR POST
 }
 
 .widget-area .widget ul li .entry-meta>span a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .widget_raratheme_popular_post ul li .entry-header .comment-count,
@@ -5022,7 +5022,7 @@ WIDGET SOCIAL LINKS
 
 .widget_rtc_social_links ul li.rtc-social-icon-wrap a:hover,
 .site-footer .widget_rtc_social_links ul li.rtc-social-icon-wrap a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff !important;
 }
 
@@ -5123,8 +5123,8 @@ WIDGET NEWSLETTER
 
 .blossomthemes-email-newsletter-wrapper form label input[type="checkbox"]:checked+.check-mark {
   background-size: 11px;
-  background-color: #2ace5e;
-  border-color: #2ace5e;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .blossomthemes-email-newsletter-wrapper form label .text {
@@ -5252,7 +5252,7 @@ WIDGET TEAM
 }
 
 .widget_rrtc_description_widget .social-profile li a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff !important;
 }
 
@@ -5273,7 +5273,7 @@ WIDGET CALENDAR
   font-size: 1em;
   font-weight: 600;
   padding: 10px;
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -5353,7 +5353,7 @@ WIDGET CALENDAR
 	display: none;
 }*/
 footer .widget_calendar .calendar_wrap a {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 footer .widget_calendar tr td {
@@ -5406,7 +5406,7 @@ ERROR 404 PAGE
   font-size: 22.2222em;
   font-weight: 700;
   line-height: 1.3;
-  color: #2ace5e;
+  color: var(--primary-color);
   text-shadow: 0 -10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -5619,12 +5619,12 @@ JOB LISTING PAGE
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .salary-amt .currency {
   font-weight: 900;
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-right: 5px;
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .company-address svg {
-  color: #2ace5e;
+  color: var(--primary-color);
   margin-right: 5px;
 }
 
@@ -5633,7 +5633,7 @@ JOB LISTING PAGE
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .job-type {
@@ -5644,11 +5644,11 @@ JOB LISTING PAGE
 
 div.job_listings .load_more_jobs {
   display: table;
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
   text-transform: uppercase;
   font-size: 0.7778em;
   font-weight: 400;
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
   padding: 15px 20px;
   margin-top: 40px;
@@ -5660,8 +5660,8 @@ div.job_listings .load_more_jobs {
 div.job_listings .load_more_jobs:hover,
 div.job_listings .load_more_jobs:focus {
   background: none;
-  color: #2ace5e;
-  border-bottom-color: #2ace5e;
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 .site-main .job_listings .jobscout_job_filters {
@@ -5767,7 +5767,7 @@ DASHBOARD PAGE
 }
 
 #job-manager-job-dashboard table td a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 /*=============================
@@ -6169,7 +6169,7 @@ RESPONSIVE STYLESHEET
   }
 
   .header-main .main-navigation .toggle-btn:hover .toggle-bar {
-    background: #2ace5e;
+    background: var(--primary-color);
   }
 
   .responsive-nav {
@@ -6251,7 +6251,7 @@ RESPONSIVE STYLESHEET
   }
 
   .responsive-nav .close-btn:hover .bar {
-    background: #2ace5e;
+    background: var(--primary-color);
   }
 
   .responsive-nav .right-block {
@@ -6276,7 +6276,7 @@ RESPONSIVE STYLESHEET
   }
 
   .responsive-nav .right-block a.btn-link:hover {
-    background: #2ace5e;
+    background: var(--primary-color);
   }
 
   .responsive-nav .secondary-nav {
@@ -6350,7 +6350,7 @@ RESPONSIVE STYLESHEET
   .responsive-nav .secondary-nav ul li.current_page_item>a,
   .responsive-nav .secondary-nav ul li.current-menu-ancestor>a,
   .responsive-nav .secondary-nav ul li.current_page_ancestor>a {
-    color: #2ace5e;
+    color: var(--primary-color);
   }
 
   .responsive-nav .main-navigation ul li ul,
@@ -7000,7 +7000,7 @@ RESPONSIVE STYLESHEET
   }
 
   .single .author-content ul.social-list li a:hover {
-    color: #2ace5e;
+    color: var(--primary-color);
   }
 
   .single .site-main footer.entry-footer .entry-footer-right {
@@ -7274,7 +7274,7 @@ RESPONSIVE STYLESHEET
 }
 
 .widget_rrtc_description_widget .rtc-team-holder-modal ul.social-profile li a {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .widget_rrtc_description_widget .rtc-team-holder-modal .rtc-team-inner-holder-modal {
@@ -7493,7 +7493,7 @@ RESPONSIVE STYLESHEET
 }
 
 .site-footer .widget_raratheme_companion_faqs_widget .expand-faq:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 /* Custom Categories slider */
@@ -7527,7 +7527,7 @@ RESPONSIVE STYLESHEET
 
 .site-footer .widget_raratheme_author_bio .readmore:hover {
   background: #121212;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .site-footer .widget_raratheme_author_bio .author-socicons li {
@@ -7574,18 +7574,18 @@ RESPONSIVE STYLESHEET
 #secondary .widget_raratheme_companion_cta_widget .text a.btn-cta {
   margin: 5px;
   border-color: #fff;
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 .site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .readmore,
 #secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .readmore {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 .site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .readmore:hover,
 #secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .readmore:hover {
   background-color: transparent;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 .site-footer .widget_raratheme_companion_cta_widget .text a.btn-cta:hover,
@@ -7618,12 +7618,12 @@ RESPONSIVE STYLESHEET
 #secondary .widget_raratheme_image_widget .readmore,
 .site-footer .widget_raratheme_image_widget .readmore {
   color: #fff;
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
 }
 
 .site-footer .widget_raratheme_author_bio .text-holder .readmore,
 #secondary .widget_raratheme_author_bio .text-holder .readmore {
-  border: 1px solid #2ace5e;
+  border: 1px solid var(--primary-color);
 }
 
 #secondary .widget_raratheme_featured_widget .text-holder .readmore:hover,
@@ -7633,7 +7633,7 @@ RESPONSIVE STYLESHEET
 #secondary .widget_raratheme_author_bio .readmore:hover,
 .site-footer .widget_raratheme_author_bio .readmore:hover {
   background: transparent;
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 #secondary .widget_raratheme_popular_post ul li .entry-header .entry-title a,
@@ -7653,7 +7653,7 @@ RESPONSIVE STYLESHEET
 #secondary .widget.widget_rtc_contact_social_links .rtc-contact-widget-wrap .social-networks li a:hover,
 .site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .author-socicons li a:hover,
 #secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .author-socicons li a:hover {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -7735,19 +7735,19 @@ RESPONSIVE STYLESHEET
 
 .site-footer .widget_rrtc_description_widget .social-profile li a:hover,
 #secondary .widget_rrtc_description_widget .social-profile li a:hover {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
 .site-footer .widget_raratheme_image_widget .readmore,
 #secondary .widget_raratheme_image_widget .readmore {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
 }
 
 .site-footer .widget.widget_raratheme_image_text_widget ul li a.btn-readmore,
 #secondary .widget.widget_raratheme_image_text_widget ul li a.btn-readmore {
-  background: #2ace5e;
+  background: var(--primary-color);
   color: #fff;
   width: fit-content;
 }
@@ -7760,11 +7760,11 @@ RESPONSIVE STYLESHEET
 .site-footer .widget_raratheme_featured_widget .text-holder .readmore,
 #secondary .widget_raratheme_image_widget .readmore,
 .site-footer .widget_raratheme_image_widget .readmore {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 .site-footer .widget.widget_raratheme_custom_categories ul li a {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 #secondary .widget.widget_rrtc_testimonial_widget .rtc-testimonial-holder .text-holder .testimonial-content {
@@ -7782,7 +7782,7 @@ RESPONSIVE STYLESHEET
 }
 
 #secondary .widget-area .widget_raratheme_custom_categories ul li a {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 #secondary .widget.widget_raratheme_companion_cta_widget .raratheme-cta-container .widget-title {
@@ -7790,7 +7790,7 @@ RESPONSIVE STYLESHEET
 }
 
 #secondary .widget_raratheme_custom_categories ul li a {
-  background-color: #2ace5e;
+  background-color: var(--primary-color);
 }
 
 /* Faq color Fix */
@@ -7799,7 +7799,7 @@ RESPONSIVE STYLESHEET
 }
 
 #secondary .widget_raratheme_companion_faqs_widget .expand-faq:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
 }
 
 #secondary .widget.widget_rrtc_icon_text_widget .rtc-itw-inner-holder .icon-holder {
@@ -7821,7 +7821,7 @@ RESPONSIVE STYLESHEET
 .page-content a:hover,
 .comment-content a:hover,
 .widget .textwidget a:hover {
-  color: #2ace5e;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
