@@ -27,7 +27,7 @@ if ($post_slug) {
 
       <div class="search_keywords">
         <label for="search_keywords"><?php esc_html_e('Keywords', 'jobscout'); ?></label>
-        <input type="text" id="search_keywords" name="search_keywords" placeholder="<?php esc_attr_e('Keywords', 'jobscout'); ?>" value="<?php if (isset($_GET['search_keywords'])) {
+        <input type="text" id="search_keywords" name="search_keywords" placeholder="<?php esc_attr_e('Search for jobs, companies, skills', 'jobscout'); ?>" value="<?php if (isset($_GET['search_keywords'])) {
                                                                                                                                             echo $_GET['search_keywords'];
                                                                                                                                           } ?>">
       </div>
@@ -36,7 +36,7 @@ if ($post_slug) {
         <select name="search_location" id="search_location">
           <option value="" <?php if (!isset($_GET['search_location'])) {
                               echo 'selected';
-                            } ?>>Location</option>
+                            } ?>>Tokyo</option>
           <?php
           $all_job_locations = get_all_job_locations();
           foreach ($all_job_locations as $location) {
