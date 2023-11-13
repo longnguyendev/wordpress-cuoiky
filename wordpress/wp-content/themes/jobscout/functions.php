@@ -148,9 +148,6 @@ function get_all_job_locations()
 	return $job_locations;
 }
 
-// Bạn có thể tùy chỉnh bộ lọc get_the_excerpt bằng cách sử dụng một hàm trong file functions.php của theme hoặc plugin WordPress của bạn. Dưới đây là cách bạn có thể làm điều này:
-
-// php
 // Copy code
 function custom_get_the_excerpt($excerpt)
 {
