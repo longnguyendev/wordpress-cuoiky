@@ -111,7 +111,7 @@ if (!function_exists('jobscout_header')) :
                 <div class="header-main">
                     <div class="container">
                         <?php
-                        jobscout_site_branding(false);
+                        jobscout_site_branding(true);
                         echo '<div class="menu-wrap">';
                         jobscout_primary_nagivation();
                         echo '</div><!-- .menu-wrap -->';
