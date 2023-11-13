@@ -21,7 +21,7 @@ if( $post_slug ){
 
 <div class="job_listings">
 
-  <form class="jobscout_job_filters" method="GET" action="<?php echo esc_url( $action_page ) ?>">
+  <form class="jobscout_job_filters" action="<?php echo home_url('/'); ?>">
     <div class="search_jobs">
 
       <div class="search_keywords">
@@ -30,8 +30,15 @@ if( $post_slug ){
       </div>
 
       <div class="search_location">
-        <label for="search_location"><?php esc_html_e( 'Location', 'jobscout' ); ?></label>
-        <input type="text"  id="search_location" name="search_location" placeholder="<?php esc_attr_e( 'Location', 'jobscout' ); ?>">
+        <select name="search_location" id="search_location">
+          <option selected>Location</option>
+          <?php
+            $all_job_locations = get_all_job_locations();
+            foreach ($all_job_locations as $location) {
+              echo '<option value="' . esc_html($location) . '">' . esc_html($location) . '</option>';
+            }
+          ?>
+        </select>
       </div>
       
       <?php if( $ed_job_category ){ ?>
@@ -47,7 +54,7 @@ if( $post_slug ){
       <?php } ?>
       
       <div class="search_submit">
-        <input type="submit" value="<?php esc_attr_e( 'Search', 'jobscout'); ?>" />
+        <input type="submit" value="<?php esc_attr_e( 'SEARCH JOB', 'jobscout'); ?>" />
       </div>
 
     </div>

@@ -42,7 +42,7 @@ function jobscout_customize_register_frontpage_banner( $wp_customize ) {
     $wp_customize->add_setting(
         'banner_title',
         array(
-            'default'           => __( 'Aim Higher, Dream Bigger', 'jobscout' ),
+            'default'           => __( 'FIND YOUR DREAM JOBS', 'jobscout' ),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'         => 'postMessage'
         )
@@ -66,7 +66,7 @@ function jobscout_customize_register_frontpage_banner( $wp_customize ) {
     $wp_customize->add_setting(
         'banner_subtitle',
         array(
-            'default'           => __( 'Each month, more than 7 million JobScout turn to website in their search for work, making over 160,000 applications every day.', 'jobscout' ),
+            'default'           => __( 'The secret behind our company is simple: to always put ourselves in the other person\'s shoes-employee, guest or customer. This allows us to see the world through their eyes, anticipate their needs and better understand their feelings.', 'jobscout' ),
             'sanitize_callback' => 'wp_kses_post',
             'transport'         => 'postMessage'
         )

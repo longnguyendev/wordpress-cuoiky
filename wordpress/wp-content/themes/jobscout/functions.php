@@ -109,7 +109,7 @@ function enqueue_font_awesome_css()
 }
 add_action('wp_enqueue_scripts', 'enqueue_font_awesome_css');
 
-// Function to enqueue Font Awesome CSS
+// Function to enqueue custom style
 function enqueue_custom_style()
 {
 	wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
@@ -121,11 +121,33 @@ function enqueue_custom_style()
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_style');
 
+// Function to get all job location
+function get_all_job_locations()
+{
+	$job_locations = array();
 
+	// Kiểm tra xem Job Manager plugin có được cài đặt không
+	if (class_exists('WP_Job_Manager')) {
+		// Lấy danh sách tất cả các công việc
+		$jobs = get_posts(array(
+			'post_type' => 'job_listing',
+			'posts_per_page' => -1,
+		));
 
-// Bạn có thể tùy chỉnh bộ lọc get_the_excerpt bằng cách sử dụng một hàm trong file functions.php của theme hoặc plugin WordPress của bạn. Dưới đây là cách bạn có thể làm điều này:
+		// Lặp qua từng công việc và lấy địa điểm của nó
+		foreach ($jobs as $job) {
+			$location = get_post_meta($job->ID, '_job_location', true);
 
-// php
+			// Thêm địa điểm vào mảng nếu không trùng lặp và tồn tại
+			if (!empty($location) && !in_array($location, $job_locations)) {
+				$job_locations[] = $location;
+			}
+		}
+	}
+
+	return $job_locations;
+}
+
 // Copy code
 function custom_get_the_excerpt($excerpt)
 {
