@@ -1,0 +1,57 @@
+.module-3 img {
+    aspect-ratio: 1 / 1;
+    height: unset !important;
+  }
+  .module-3 {
+    margin-bottom: 70px;
+    padding: 100px;
+    padding-top: 50px;
+  }
+  .module-3 .post{
+    margin-top: 50px;
+  }
+  .module-3 .content-wrap {
+    padding: 0 !important;
+    padding-left: 20px !important;
+  }
+  
+  .module-3 article {
+    box-shadow: unset !important;
+    margin-bottom: unset !important;
+  }
+
+  .module-3 .readmore-link {
+    color: orangered;
+  }
+  
+  .module-3 p {
+    font-size: 15px;
+  }
+  
+  .module-3 a {
+    font-size: 15px;
+  }
+  .page-template-default figure.post-thumbnail {
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+  }
+  .module-3 .content-wrap {
+    display: inline-block;
+    width: 54%;
+    padding: 0 !important;
+    padding-left: 20px !important;
+    text-align: left;
+  }
+  .module-3 .entry-title a{
+    color: #000;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .entry-title a:hover {
+    color: var(--primary-color);
+}
+.module-5 .readmore-link {
+    color: #ee904b;
+}
