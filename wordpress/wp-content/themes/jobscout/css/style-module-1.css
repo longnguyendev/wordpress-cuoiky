@@ -1,0 +1,102 @@
+.module-1 .site-banner .banner-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--black-color);
+  opacity: .25;
+}
+
+.module-1 .site-banner .wp-custom-header img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.module-1 .site-banner .banner-caption {
+  text-align: left;
+}
+
+.module-1 .site-banner .banner-caption .caption-inner {
+  max-width: 890px;
+}
+
+.module-1 .site-banner .banner-caption .title {
+  font-weight: 500;
+  line-height: 1;
+}
+
+.module-1 .site-banner .banner-caption .description {
+  font-weight: 200;
+}
+
+.module-1 .site-banner .banner-caption .search-filter-wrap .search-form {
+  max-width: 100%;
+}
+
+.module-1 .site-banner .jobscout_job_filters {
+  padding: 20px;
+  background-color: #0000005d;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs {
+  border-radius: 0;
+  justify-content: space-between;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs input,
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs select {
+  padding-left: 40px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs div.filter_first,
+.banner-caption .jobscout_job_filters .search_jobs div.search_keywords,
+.banner-caption .jobscout_job_filters .search_jobs div.filter_last,
+.banner-caption .jobscout_job_filters .search_jobs div.search_location {
+  flex: none;
+  padding-right: 7px;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs .search_keywords {
+  width: 50%;
+  position: relative;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs .search_keywords::before {
+  content: url('../images/search.png');
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  left: 15px;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs .search_location {
+  width: 30%;
+  position: relative;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs .search_location::before {
+  content: url('../images/room.png');
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  left: 15px;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs .search_submit {
+  width: 20%;
+}
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs input[type="submit"] {
+  background-image: none;
+  text-indent: unset;
+  padding: 12px 25px;
+  color: var(--white-color);
+  width: 100%;
+  border: 1px solid var(--primary-color);
+}
+
+
+.module-1 .site-banner .banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}

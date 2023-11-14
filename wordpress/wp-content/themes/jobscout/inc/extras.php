@@ -125,7 +125,7 @@ function jobscout_site_branding( $responsive = false ){
         $branding_class = '';
     }
     ?>
-    <div class="site-branding<?php echo esc_attr( $branding_class ); ?>" itemscope itemtype="https://schema.org/Organization"> <!-- logo-text -->
+    <div class="site-branding" itemscope itemtype="https://schema.org/Organization"> <!-- logo-text -->
         <?php 
             if( function_exists( 'has_custom_logo' ) && has_custom_logo() ){
                 echo '<div class="site-logo">';
