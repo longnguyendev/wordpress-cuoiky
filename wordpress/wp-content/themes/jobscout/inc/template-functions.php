@@ -19,17 +19,18 @@ if (!function_exists('jobscout_doctype')) :
 endif;
 add_action('jobscout_doctype', 'jobscout_doctype');
 
-if( ! function_exists( 'jobscout_head' ) ) :
-/**
- * Before wp_head 
-*/
-function jobscout_head(){ ?>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+if (!function_exists('jobscout_head')) :
+    /**
+     * Before wp_head 
+     */
+    function jobscout_head()
+    { ?>
+        <meta charset="<?php bloginfo('charset'); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <?php
     }
 endif;
@@ -512,7 +513,7 @@ if (!function_exists('jobscout_header')) :
             {
     ?>
     <footer id="colophon" class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
-        <?php
+    <?php
             }
         endif;
         add_action('jobscout_footer', 'jobscout_footer_start', 20);
@@ -523,31 +524,44 @@ if (!function_exists('jobscout_header')) :
              */
             function jobscout_footer_top()
             {
-                $footer_sidebars = array('footer-one', 'footer-two', 'footer-three', 'footer-four');
-                $active_sidebars = array();
-                $sidebar_count   = 0;
-
-                foreach ($footer_sidebars as $sidebar) {
-                    if (is_active_sidebar($sidebar)) {
-                        array_push($active_sidebars, $sidebar);
-                        $sidebar_count++;
-                    }
+    ?>
+        <div class="footer-t">
+            <div class="container">
+                <?php
+                if (function_exists('has_custom_logo') && has_custom_logo()) {
+                    echo '<div class="site-logo">';
+                    the_custom_logo();
+                    echo '</div>';
                 }
-
-                if ($active_sidebars) { ?>
-            <div class="footer-t">
-                <div class="container">
-                    <div class="grid column-<?php echo esc_attr($sidebar_count); ?>">
-                        <?php foreach ($active_sidebars as $active) { ?>
-                            <div class="col">
-                                <?php dynamic_sidebar($active); ?>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
+                echo '<div class="menu-wrap">';
+                jobscout_tertiary_navigation();
+                echo '</div><!-- .menu-wrap -->';
+                ?>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-google.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-line.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-twitter.png" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
-        <?php
-                }
+        </div>
+    <?php
             }
         endif;
         add_action('jobscout_footer', 'jobscout_footer_top', 30);
@@ -566,8 +580,6 @@ if (!function_exists('jobscout_header')) :
                 <div class="copyright">
                     <?php
                     jobscout_get_footer_copyright();
-                    jobscout_ed_author_link();
-                    jobscout_ed_wp_link();
                     ?>
                 </div>
             </div>

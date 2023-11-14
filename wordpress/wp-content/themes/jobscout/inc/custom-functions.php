@@ -45,6 +45,7 @@ function jobscout_setup() {
 	register_nav_menus( array(
 		'primary'   => esc_html__( 'Primary', 'jobscout' ),
         'secondary' => esc_html__( 'Secondary', 'jobscout' ),
+        'tertiary' => esc_html__( 'Tertiary', 'jobscout' ),
 	) );
 
 	/*
