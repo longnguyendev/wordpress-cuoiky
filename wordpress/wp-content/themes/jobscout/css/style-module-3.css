@@ -1,0 +1,31 @@
+.module-3 img {
+    aspect-ratio: 1 / 1;
+    height: unset !important;
+  }
+  
+  .module-3 .content-wrap {
+    padding: 0 !important;
+    padding-left: 20px !important;
+  }
+  
+  .module-3 article {
+    box-shadow: unset !important;
+    margin-bottom: unset !important;
+  }
+  
+  .module-3 .entry-title {
+    font-size: 1rem !important;
+  }
+  
+  .module-3 .readmore-link {
+    color: orangered;
+  }
+  
+  .module-3 p {
+    font-size: 13px !important;
+  }
+  
+  .module-3 a {
+    font-size: 14px !important;
+  }
+  
