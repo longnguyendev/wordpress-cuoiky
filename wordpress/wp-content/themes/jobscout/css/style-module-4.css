@@ -1,0 +1,16 @@
+.content-area .module-4 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+}
+.content-area .module-4 article {
+box-sizing: border-box;
+flex: none !important;
+margin-bottom: 0 !important;
+margin-top: 5px;
+}
+.content-area .module-4 article .entry-title a{
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
