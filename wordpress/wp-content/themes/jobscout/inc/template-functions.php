@@ -537,28 +537,9 @@ if (!function_exists('jobscout_header')) :
                 jobscout_tertiary_navigation();
                 echo '</div><!-- .menu-wrap -->';
                 ?>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-facebook.png" alt="">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-google.png" alt="">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-line.png" alt="">
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-twitter.png" alt="">
-                        </a>
-                    </li>
-                </ul>
+                <div class="social-list">
+                    <?php dynamic_sidebar( 'footer-social' ); ?>
+                </div>
             </div>
         </div>
     <?php
