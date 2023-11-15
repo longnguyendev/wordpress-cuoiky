@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About Template
+Template Name: No Sidebar Template
 */
 get_header(); ?>
 
@@ -8,16 +8,10 @@ get_header(); ?>
   <main id="main" class="site-main">
 
     <?php
+    $page_slug = get_post_field('post_name', get_post());
     while (have_posts()) : the_post();
 
-      get_template_part('template-parts/content', 'page');
-
-      /**
-       * Comment Template
-       * 
-       * @hooked jobscout_comment
-       */
-      do_action('jobscout_after_page_content');
+      get_template_part('template-parts/content', $page_slug);
 
     endwhile; // End of the loop.
     ?>
