@@ -109,6 +109,7 @@ if (!function_exists('jobscout_header')) :
             <header id="masthead" class="site-header header-one" itemscope itemtype="https://schema.org/WPHeader">
                 <div class="header-main">
                     <?php
+                    // site branding
                     jobscout_site_branding(true);
                     echo '<div class="menu-wrap">';
                     jobscout_primary_nagivation();
