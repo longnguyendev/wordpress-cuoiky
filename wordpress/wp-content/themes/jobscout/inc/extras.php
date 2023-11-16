@@ -245,6 +245,38 @@ function jobscout_secondary_menu_fallback(){
 }
 endif;
 
+if( ! function_exists( 'jobscout_tertiary_navigation' ) ) :
+    /**
+     * Tetiary Navigation
+    */
+    function jobscout_tertiary_navigation(){ ?>
+        <nav class="tertiary-nav">
+        <?php
+            wp_nav_menu( array(
+                            'theme_location' => 'tertiary',
+                            'menu_class'     => 'nav-menu',
+                            'menu_id'        => 'tertiary-menu',
+                            'fallback_cb'    => 'jobscout_tertiary_menu_fallback',
+                        ) );
+        ?>
+        </nav>
+        <?php
+    }
+endif;
+
+if( ! function_exists( 'jobscout_tertiary_menu_fallback' ) ) :
+    /**
+     * Fallback for tertiary menu
+    */
+    function jobscout_tertiary_menu_fallback(){
+        if( current_user_can( 'manage_options' ) ){
+            echo '<ul id="tertiary-menu" class="menu">';
+            echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Click here to add a menu', 'jobscout' ) . '</a></li>';
+            echo '</ul>';
+        }
+    }
+endif;
+
 if( ! function_exists( 'jobscout_theme_comment' ) ) :
 /**
  * Callback function for Comment List *

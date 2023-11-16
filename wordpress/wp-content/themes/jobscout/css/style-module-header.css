@@ -1,5 +1,13 @@
 .header-main {
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 55px;
+}
+
+.header-main  .site-branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-main  .site-branding .site-title {
@@ -19,6 +27,11 @@
 .header-main .main-navigation ul li {
   font-size: .95em;
   text-transform: uppercase;
+  margin: 0 8px;
+}
+
+.header-main .btn-wrap {
+  width: 180px;
 }
 
 .header-main .btn-wrap a.btn {
@@ -31,12 +44,8 @@
   border: 1px solid var(--primary-color);
 }
 
-.header-main .main-navigation ul li {
-  padding: 17px;
-}
-
 .header-main .main-navigation ul li a {
-  padding: 0;
+  padding: 10px;
 }
 
 .header-main .main-navigation ul li:hover>a,
@@ -45,20 +54,19 @@
 .header-main .main-navigation ul li.current-menu-ancestor>a,
 .header-main .main-navigation ul li.current_page_ancestor>a {
   position: relative;
-  padding: 0;
 }
 
-.header-main .main-navigation ul li:hover>a::after,
-.header-main .main-navigation ul li.current-menu-item>a::after,
-.header-main .main-navigation ul li.current_page_item>a::after,
-.header-main .main-navigation ul li.current-menu-ancestor>a::after,
-.header-main .main-navigation ul li.current_page_ancestor>a::after {
+.header-main .main-navigation ul li:hover::after,
+.header-main .main-navigation ul li.current-menu-item::after,
+.header-main .main-navigation ul li.current_page_item::after,
+.header-main .main-navigation ul li.current-menu-ancestor::after,
+.header-main .main-navigation ul li.current_page_ancestor::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -10%;
+  bottom: -1px;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: var(--primary-color);
 }
 
