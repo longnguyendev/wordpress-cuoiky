@@ -22,7 +22,6 @@ $job_featured = get_post_meta( get_the_ID(), '_featured', true );
 $company_name = get_post_meta( get_the_ID(), '_company_name', true );
 $job_posted   = get_post_meta( get_the_ID(), '_date', true );
 
-
 ?>
 
 	<article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_lat ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_long ); ?>">
@@ -36,14 +35,39 @@ $job_posted   = get_post_meta( get_the_ID(), '_date', true );
 			<h2 class="entry-title">
 				<a href="<?php the_job_permalink(); ?>"><?php wpjm_the_job_title(); ?></a>
 			</h2>
-			<p><?php the_date(); ?></p>
 
-			<?php if( $company_name ){ ?>
-				<div class="company-name">
-					<?php the_company_name(); ?>
+			<div class="entry-posted-date">Created:
+				<?php
+				$job_posted_date = get_the_date();
+				echo date('M j, Y', strtotime($job_posted_date));
+				?>
+			</div>
+			<div class="row infomation">
+				<div class="col-md-4 job-types">
+					<?php 
+						if ( get_option( 'job_manager_enable_types' ) ) { 
+							$types = wpjm_get_the_job_types(); 
+							if ( ! empty( $types ) ) : foreach ( $types as $jobtype ) : ?>
+								<pclass=" <?php echo esc_attr( sanitize_title( $jobtype->slug ) ); ?>"><?php echo esc_html( $jobtype->name ); ?></p>
+							<?php endforeach; endif; 
+						}
+						do_action( 'job_listing_meta_end' ); 			
+					?>	
 				</div>
-			<?php } ?>
-			
+				<div class="col-md-4">
+					<?php if( $company_name ){ ?>
+						<div class="company-name">
+							<?php the_company_name(); ?>
+						</div>
+					<?php } ?>
+				</div>
+				<div class="col-md-4">
+					<div class="company-address">
+						<?php the_job_location( true ); ?>
+					</div>
+				</div>
+			</div>
+
 			<div class="entry-meta">
 				<?php 
 					do_action( 'job_listing_meta_start' ); 
@@ -59,16 +83,6 @@ $job_posted   = get_post_meta( get_the_ID(), '_date', true );
 					<i class="fas fa-map-marker-alt"></i>
 					<?php the_job_location( true ); ?>
 				</div>
-				
-				<?php 
-					if ( get_option( 'job_manager_enable_types' ) ) { 
-						$types = wpjm_get_the_job_types(); 
-						if ( ! empty( $types ) ) : foreach ( $types as $jobtype ) : ?>
-							<li class="job-type <?php echo esc_attr( sanitize_title( $jobtype->slug ) ); ?>"><?php echo esc_html( $jobtype->name ); ?></li>
-						<?php endforeach; endif; 
-					}
-					do_action( 'job_listing_meta_end' ); 
-				?>
 			</div>		
 		</div>
 
