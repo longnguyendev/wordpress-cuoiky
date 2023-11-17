@@ -17,7 +17,7 @@ $ed_blog      = get_theme_mod('ed_blog', true);
 $args = array(
     'post_type'           => 'post',
     'post_status'         => 'publish',
-    'posts_per_page'      => 4,
+    'posts_per_page'      => 8,
     'ignore_sticky_posts' => true
 );
 
