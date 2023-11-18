@@ -24,7 +24,7 @@ services:
     networks:
       - wpsite
     ports:
-      - "3306:3306"
+      - "3306:3305"
     volumes:
       - ./datababse-wordpress:/home/myhome
   php:
