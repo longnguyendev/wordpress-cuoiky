@@ -1,0 +1,27 @@
+.widget_raratheme_companion_cta_widget .raratheme-cta-container {
+    max-width: 750px;
+}
+
+.widget_raratheme_companion_cta_widget .bttk-cta-bg,
+.widget_raratheme_companion_cta_widget .text {
+  padding: 70px 0;
+}
+
+.widget_raratheme_companion_cta_widget .widget-title {
+    margin-bottom: 30px;
+}
+
+.widget_raratheme_companion_cta_widget a.btn-cta {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 0;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.widget_raratheme_companion_cta_widget a.btn-cta:hover {
+    border: 1px solid var(--primary-color);
+}
