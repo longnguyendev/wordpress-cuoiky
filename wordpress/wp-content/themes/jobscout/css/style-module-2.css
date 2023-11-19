@@ -1,0 +1,28 @@
+.top-job-section .row div.job_listings article .company-name::before{
+    content: "";
+}
+.entry-title a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+.entry-posted-date {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+.infomation {
+    text-align: center;
+    align-items: center !important;
+    font-size: 14px;
+    background: rgb(0 0 0 / 3%);
+    border-radius: 5px;
+} 
+.top-job-section .row div.job_listings article .company-name {
+    font-size: 14px;
+    color: black;
+}
+.top-job-section .row div.job_listings article .company-address a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
