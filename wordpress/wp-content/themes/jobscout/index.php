@@ -12,6 +12,19 @@
  *
  * @package JobScout
  */
+$pg = 1;
+$total_page = 1;
+if (isset($_GET['pg'])) {
+	$pg = $_GET['pg'];
+}
+
+$post_counts = wp_count_posts();
+
+// echo 'Total Posts: ' . $post_counts->publish;
+
+$total_page = ceil((int)$post_counts->publish / 2);
+
+
 
 get_header(); ?>
 
@@ -60,7 +73,7 @@ if ($page) {
 				$args = array(
 					'post_type'           => 'post',
 					'post_status'         => 'publish',
-					'posts_per_page'      => 8,
+					'posts_per_page'      => (2 * $pg),
 					'ignore_sticky_posts' => true
 				);
 
@@ -84,6 +97,11 @@ if ($page) {
 					get_template_part('template-parts/content', 'none');
 
 				endif; ?>
+				<?php if ($pg < $total_page) { ?>
+					<div class="d-flex justify-content-center job_listings">
+						<a class="load_more_jobs mt-4 rounded-2" href="/blog/?pg=<?php echo ($pg + 1) ?>">Load More</a>
+					</div>
+				<?php } ?>
 			</div>
 
 
