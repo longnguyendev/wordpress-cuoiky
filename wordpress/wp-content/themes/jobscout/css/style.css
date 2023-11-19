@@ -11,3 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+
+section.top-job-section .section-title,
+.widget_raratheme_companion_cta_widget .widget-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
