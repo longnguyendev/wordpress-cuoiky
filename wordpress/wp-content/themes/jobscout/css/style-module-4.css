@@ -2,29 +2,40 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    }
-    .content-area .module-4 article {
+}
+.content-area .module-4 article {
     box-sizing: border-box;
     flex: none !important;
     margin-bottom: 0 !important;
     margin-top: 5px;
-    }
-    .content-area .module-4 article .entry-title a{
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: bold;
-    } 
-    .content-area .module-4 article .entry-posted-date{
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 14px;
-    }
-    .content-area .module-4 article .infomation{
-        font-size: 14px;
-        background: rgb(0 0 0 / 3%);
-    } 
-    .content-area .module-4 article .company-logo{
-        border: 2px solid #eeee
-    }
-    .top-job-section .row div.job_listings article .company-name::before {
-        content: "";
-    }
+}
+.content-area .module-4 article .entry-title a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+} 
+.content-area .module-4 article .entry-posted-date{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+.content-area .module-4 article .infomation{
+    align-items: center !important;
+    font-size: 14px;
+    background: rgb(0 0 0 / 3%);
+    border-radius: 5px;
+} 
+.content-area .module-4 article .company-logo{
+    border: 2px solid #eeee;
+}
+.site-main .entry-content div.job_listings div.job_listings article .company-name:before{
+    content: "";
+}
+.site-main .entry-content div.job_listings div.job_listings article .company-name {
+    font-size: 14px;
+    color: black;
+}
+.site-main .entry-content div.job_listings div.job_listings article .company-address a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}

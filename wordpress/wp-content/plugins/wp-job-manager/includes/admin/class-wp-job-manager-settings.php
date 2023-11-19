@@ -152,7 +152,7 @@ class WP_Job_Manager_Settings {
 							'desc'    => __( 'Determines whether to show page numbered links or a Load More Listings button.', 'wp-job-manager' ),
 							'type'    => 'radio',
 							'options' => [
-								'load_more'  => __( 'Load More Listings button', 'wp-job-manager' ),
+								'load_more'  => __( 'Load More Listings -button', 'wp-job-manager' ),
 								'pagination' => __( 'Page numbered links', 'wp-job-manager' ),
 							],
 						],
