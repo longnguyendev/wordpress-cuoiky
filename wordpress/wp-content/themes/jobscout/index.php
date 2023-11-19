@@ -99,7 +99,7 @@ if ($page) {
 				endif; ?>
 				<?php if ($pg < $total_page) { ?>
 					<div class="d-flex justify-content-center job_listings">
-						<a class="load_more_jobs mt-4 rounded-2" href="/blog/?pg=<?php echo ($pg + 1) ?>">Load More</a>
+						<a class="load_more_jobs mt-5 rounded-2" href="/blog/?pg=<?php echo ($pg + 1) ?>">Load More</a>
 					</div>
 				<?php } ?>
 			</div>
@@ -115,7 +115,7 @@ if ($page) {
 	 * After Posts hook
 	 * @hooked jobscout_navigation - 15
 	 */
-	do_action('jobscout_after_posts_content');
+	// do_action('jobscout_after_posts_content');
 	?>
 
 </div><!-- #primary -->

@@ -29,20 +29,19 @@ do_action('job_manager_job_filters_before', $atts);
 
 		<div class="search_keywords">
 			<label for="search_keywords"><?php esc_html_e('Keywords', 'wp-job-manager'); ?></label>
-			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e('Keywords', 'wp-job-manager'); ?>" value="<?php if (isset($_POST['search_keywords'])) {
-																																																																								echo $_POST['search_keywords'];
-																																																																							} else {
-																																																																								echo esc_attr($keywords);
-																																																																							} ?>" />
+			<input type="text" name="search_keywords" id="search_keywords" placeholder="<?php esc_attr_e('Keywords', 'wp-job-manager'); ?>" />
 		</div>
 
-		<div class="search_location">
-			<label for="search_location"><?php esc_html_e('Location', 'wp-job-manager'); ?></label>
-			<input type="text" name="search_location" id="search_location" placeholder="<?php esc_attr_e('Location', 'wp-job-manager'); ?>" value="<?php if (isset($_POST['search_location'])) {
-																																																																								echo $_POST['search_location'];
-																																																																							} else {
-																																																																								echo esc_attr($location);
-																																																																							} ?>" />
+		<div class="search_location custom">
+			<select class="form-select ps-5" name="search_location" id="search_location">
+				<option value="" selected disabled>Choose a location</option>
+				<?php
+				$all_job_locations = get_all_job_locations();
+				foreach ($all_job_locations as $location) {
+					echo '<option value="' . esc_html($location) . '" >' . esc_html($location) . '</option>';
+				}
+				?>
+			</select>
 		</div>
 
 		<?php if (apply_filters('job_manager_job_filters_show_remote_position', get_option('job_manager_enable_remote_position', true), $atts)) : ?>
