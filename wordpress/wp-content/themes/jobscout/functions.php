@@ -121,6 +121,7 @@ function enqueue_custom_style()
 	wp_enqueue_style('custom-style-module-subscribe-newsletter', get_template_directory_uri() . '/css/style-module-subscribe-newsletter.css', array(), '1.0', 'all');
 	wp_enqueue_style('custom-style-module-header', get_template_directory_uri() . '/css/style-module-header.css', array(), '1.0', 'all');
 	wp_enqueue_style('custom-style-module-footer', get_template_directory_uri() . '/css/style-module-footer.css', array(), '1.0', 'all');
+	wp_enqueue_style('custom-style-module-about-contact-banner', get_template_directory_uri() . '/css/style-module-about-contact-banner.css', array(), '1.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_style');
 

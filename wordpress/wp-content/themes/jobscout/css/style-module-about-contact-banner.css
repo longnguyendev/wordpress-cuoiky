@@ -1,0 +1,22 @@
+.module-about-contact-banner {
+    padding: 150px 0;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.module-about-contact-banner .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--black-color);
+    opacity: .25;
+  }
+
+.module-about-contact-banner h1 {
+    display: inline-block;
+    max-width: 500px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 2.2rem;
+}
