@@ -39,3 +39,6 @@
     font-size: 14px;
     color: black;
 }
+.job-excerpt .detail-excerpt {
+    margin-bottom: 0 !important;
+}

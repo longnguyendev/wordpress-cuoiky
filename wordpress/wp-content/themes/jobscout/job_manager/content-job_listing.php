@@ -21,6 +21,7 @@ $job_salary   = get_post_meta( get_the_ID(), '_job_salary', true );
 $job_featured = get_post_meta( get_the_ID(), '_featured', true );
 $company_name = get_post_meta( get_the_ID(), '_company_name', true );
 $job_posted   = get_post_meta( get_the_ID(), '_date', true );
+$post_custom = get_post_custom( get_the_ID() );
 
 ?>
 
@@ -67,11 +68,29 @@ $job_posted   = get_post_meta( get_the_ID(), '_date', true );
 					</div>
 				</div>
 			</div>
-			<div>
-				
-			</div>	
 		</div>
-
+		<ul class="job-excerpt ms-0 ps-3 mt-2">
+				<?php 
+				if( $post_custom ) { // kiểm tra xem nó có dữ liệu hay không
+					// Duyệt qua mảng các trường tùy chỉnh và in ra giá trị
+					foreach ($post_custom as $key => $values) {
+						// Kiểm tra nếu trường không phải là trường thông thường (title, content, date, v.v.)
+						if (strpos($key, '_') !== 0) {
+						?>
+							<li>
+								<?php							
+								// $values là mảng chứa các giá trị của trường tùy chỉnh
+								foreach ($values as $value) {
+									echo '<p class = "detail-excerpt">' . esc_html($value) . '</p>';
+								} 
+								?>
+							</li>
+						<?php
+						}
+					}
+				}
+				?>
+		</ul>	
 		<?php if( $job_featured ){ ?>
 			<div class="featured-label"><?php esc_html_e( 'Featured', 'jobscout' ); ?></div>
 		<?php } ?>
