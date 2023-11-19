@@ -33,3 +33,15 @@
 .module-5 a {
   font-size: 14px !important;
 }
+
+.search_location.custom {
+  position: relative;
+}
+
+.search_location.custom::before {
+  content: url(../images/room.png);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  left: 25px;
+}
