@@ -29,7 +29,7 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
 
 
             <?php if ($qry->have_posts()) { ?>
-                <div class="row module-3 bg-light">
+                <div class="row module-3">
                     <?php
                     if ($blog_heading) echo '<h2 class="section-title">' . esc_html($blog_heading) . '</h2>';
                     //if ($sub_title) echo '<div class="section-desc">' . wpautop(wp_kses_post($sub_title)) . '</div>';
@@ -81,11 +81,11 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
                     ?>
                 </div><!-- .article-wrap -->
 
-                <?php if ($blog && $label) { ?>
-                    <div class="btn-wrap">
-                        <a href="<?php the_permalink($blog); ?>" class="btn"><?php echo esc_html($label); ?></a>
-                    </div>
-                <?php } ?>
+                <?php /*if ($blog && $label) { */?>
+                    <!-- <div class="btn-wrap"> -->
+                        <!-- <a href="<?php /*the_permalink($blog); */?>" class="btn"><?php /*echo esc_html($label); */?></a> -->
+                   <!-- </div>*/ -->
+                <?php /*}*/ ?>
 
             <?php } ?>
         </div>

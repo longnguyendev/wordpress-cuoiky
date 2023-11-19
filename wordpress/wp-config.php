@@ -83,6 +83,8 @@ define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        'fbcfa5d
 define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '5ee5be8fbdbb13c670ee3d1b32f5d2be8188e33a') );
 define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '343c6645a77f1793895c2566eaaeadc1da41efb8') );
 define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'b385d3355b1bbf3c80812cb29574183c8b251854') );
+define('FS_METHOD', 'direct');
+
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/

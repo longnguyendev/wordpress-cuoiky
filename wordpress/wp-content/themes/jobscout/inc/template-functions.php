@@ -511,6 +511,7 @@ if (!function_exists('jobscout_header')) :
             {
     ?>
     <footer id="colophon" class="site-footer" itemscope itemtype="https://schema.org/WPFooter">
+        <?php dynamic_sidebar('subscribe-newsletter') ?>
     <?php
             }
         endif;

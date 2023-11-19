@@ -52,7 +52,12 @@ function jobscout_widgets_init(){
             'name'        => __( 'Footer Social', 'jobscout' ),
             'id'          => 'footer-social', 
             'description' => __( 'Add footer social widgets here.', 'jobscout' ),
-        )        
+        ),
+        'subscribe-newsletter'=> array(
+            'name'        => __( 'Subscribe Newsletter', 'jobscout' ),
+            'id'          => 'subscribe-newsletter', 
+            'description' => __( 'Add subscribe newsletter widgets here.', 'jobscout' ),
+        )       
     );
     
     foreach( $sidebars as $sidebar ){
