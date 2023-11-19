@@ -1,0 +1,72 @@
+
+.wpcf7 p {
+    position: relative; 
+    margin: 0;
+  height: 50px;
+}
+.wpcf7 p .fa-envelope{
+  position: absolute;
+  color: var(--primary-color);
+  z-index: 100;
+  font-size: 18px;
+  top: calc(50% - 9px);
+  left: 3%;
+}
+.wpcf7 .wpcf7-text {
+  text-indent: 6%;
+}
+.newsletter-wrap {
+    padding: 20px;
+    padding-top: 33.19px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-newsletter-title {
+    margin-right: 30px;
+}
+
+.wpcf7-form-control {
+    flex: 1; 
+    margin-right: 30px; 
+}
+
+.wpcf7 input[type="submit"] {
+    border: 1px solid #fff;
+    margin-left: 30px;
+    height: 50px;
+    border-radius: 0;
+}
+.wpcf7 input[type="submit"]:hover {
+    border: 1px solid #fff;
+    margin-left: 30px;
+    height: 50px;
+    border-radius: 0;
+    color: #fff;
+}
+.wpcf7-response-output {
+    display: block;
+    margin-top: 10px; 
+}
+.wpcf7 form .wpcf7-response-output {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: var(--primary-color);
+    margin: 10px auto;
+    color: #fff;
+}
+.newsletter-wrap .wpcf7-not-valid-tip {
+    color: #fff;
+}
+h2.subscribe-newsletter-title {
+    font-size: 23px;
+    color: #fff;
+}
+.wpcf7 input[type="email"] {
+    padding-right: 100px;
+}
+#block-12 {
+    margin: 0;
+}
