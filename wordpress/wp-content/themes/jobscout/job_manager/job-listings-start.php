@@ -15,4 +15,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<div class="job_listings row module-4">
+<div class="job_listings">
