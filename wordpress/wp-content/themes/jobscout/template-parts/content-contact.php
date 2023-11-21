@@ -11,5 +11,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    Code cho trang Contact ở đây
+    <div class="module-contact-content">
+        <section class="contact-content-1">
+            <div class="container">
+                <?php dynamic_sidebar('contact-content-1'); ?>
+            </div>
+        </section>
+        <section class="contact-content-2">
+            <div class="container">
+                <?php dynamic_sidebar('contact-content-2'); ?>
+            </div>
+        </section>
+    </div>
 </article><!-- #post-<?php the_ID(); ?> -->
