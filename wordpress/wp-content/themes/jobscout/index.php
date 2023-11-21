@@ -13,6 +13,7 @@
  * @package JobScout
  */
 $pg = 1;
+$perPage = 8;
 $total_page = 1;
 if (isset($_GET['pg'])) {
 	$pg = $_GET['pg'];
@@ -22,7 +23,7 @@ $post_counts = wp_count_posts();
 
 // echo 'Total Posts: ' . $post_counts->publish;
 
-$total_page = ceil((int)$post_counts->publish / 2);
+$total_page = ceil((int)$post_counts->publish / $perPage);
 
 
 
@@ -73,7 +74,7 @@ if ($page) {
 				$args = array(
 					'post_type'           => 'post',
 					'post_status'         => 'publish',
-					'posts_per_page'      => (2 * $pg),
+					'posts_per_page'      => ($perPage * $pg),
 					'ignore_sticky_posts' => true
 				);
 
