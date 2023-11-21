@@ -57,7 +57,17 @@ function jobscout_widgets_init(){
             'name'        => __( 'Subscribe Newsletter', 'jobscout' ),
             'id'          => 'subscribe-newsletter', 
             'description' => __( 'Add subscribe newsletter widgets here.', 'jobscout' ),
-        )       
+        ),
+        'contact-content-1'=> array(
+            'name'        => __( 'Contact Content 1', 'jobscout' ),
+            'id'          => 'contact-content-1', 
+            'description' => __( 'Add contact content 1 widgets here.', 'jobscout' ),
+        ),    
+        'contact-content-2'=> array(
+            'name'        => __( 'Contact Content 2', 'jobscout' ),
+            'id'          => 'contact-content-2', 
+            'description' => __( 'Add contact content 2 widgets here.', 'jobscout' ),
+        ),    
     );
     
     foreach( $sidebars as $sidebar ){

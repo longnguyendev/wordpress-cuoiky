@@ -1,0 +1,34 @@
+.module-contact-content {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0;
+}
+
+.module-contact-content section {
+    padding: 25px 0;
+}
+
+.module-contact-content .widget {
+    margin: 0;
+}
+
+.module-contact-content .contact-content-1 {
+    background-color: var(--white-color);
+}
+
+.module-contact-content .contact-content-1 p {
+    margin-bottom: 0;
+    font-size: 14px;   
+}
+
+.module-contact-content h6 {
+    margin-bottom: 10px;
+}
+.module-contact-content .contact-content-2 p {
+    padding: 0 150px;
+    font-size: 14px;   
+}
+.module-contact-content .contact-content-2 .contact-social {
+    padding: 0 50px;
+    font-size: 14px;   
+}
