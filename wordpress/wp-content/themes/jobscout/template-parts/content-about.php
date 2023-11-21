@@ -12,7 +12,6 @@
 
 <div class="module-about-content">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h2 class="heading">ABOUT US</h2>
             <section class="about-content-1">
                 <div class="container">
                     <?php dynamic_sidebar('about-content-1');?>

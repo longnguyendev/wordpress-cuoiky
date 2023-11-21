@@ -56,3 +56,6 @@
 .job_filters {
     margin-bottom: 20px;
 }
+.site-main .entry-content div.job_listings div.job_listings article .company-logo {
+    background: none;
+}
