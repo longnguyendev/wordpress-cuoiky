@@ -1,0 +1,41 @@
+.module-about-content .hentry {
+    margin: 0;
+}
+.module-about-content h2.heading{
+    padding-top: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.module-about-content {
+    background-color: #f2f2f2;
+}
+.module-about-content .about-content-2 {
+    padding-top: 60px;
+    background-color: var(--white-color);
+}
+.module-about-content .about-content-3 {
+    margin-top: 60px;
+}
+.module-about-content p.about-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 5%;
+}
+.module-about-content div.paragraph{
+    text-align: center;
+}
+.module-about-content p.paragraph1{
+    text-align: center;
+    color: #ea751e;
+    font-weight: bold;
+    font-size: 18px;
+}
+.module-about-content div.paragraph-end{
+    text-align: center;
+}
+.module-about-content div.paragraph-end .end{
+    font-size: 18px;
+    font-weight: bold;
+}
