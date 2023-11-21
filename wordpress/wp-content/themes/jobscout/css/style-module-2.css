@@ -26,3 +26,9 @@
     font-size: 14px;
     color: black;
 }
+.top-job-section .row div.job_listings article  {
+    flex-direction: column;
+}
+.top-job-section .row div.job_listings article .top{
+    display: flex;
+}

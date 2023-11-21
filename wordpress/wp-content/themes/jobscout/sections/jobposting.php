@@ -13,11 +13,11 @@ if ( $ed_jobposting && jobscout_is_wp_job_manager_activated() && $job_title  ) {
     <section id="job-posting-section" class="top-job-section">
         <div class="container">
             <?php 
-                if( $job_title ) echo '<h2 class="section-title">'. esc_html( $job_title ) .'</h2>'; 
+                if( $job_title ) echo '<h2 class="section-title">TOP JOBS</h2>'; 
                 if( jobscout_is_wp_job_manager_activated() && $count_posts->publish != 0 ){ ?>
                     <div class="row">
                         <div class="col-md-12">
-                            <?php echo do_shortcode('[jobs show_filters="false" jobs per_page="2"]'); ?>
+                            <?php echo do_shortcode('[jobs show_filters="false" jobs per_page="6"]'); ?>
                         </div>
                     </div>
                 <?php } 

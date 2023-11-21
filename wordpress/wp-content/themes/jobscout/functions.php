@@ -124,6 +124,7 @@ function enqueue_custom_style()
 	wp_enqueue_style('custom-style-module-about-contact-banner', get_template_directory_uri() . '/css/style-module-about-contact-banner.css', array(), '1.0', 'all');
 	wp_enqueue_style('custom-style-module-cta', get_template_directory_uri() . '/css/style-module-cta.css', array(), '1.0', 'all');
 	wp_enqueue_style('custom-style-module-contact-content', get_template_directory_uri() . '/css/style-module-contact-content.css', array(), '1.0', 'all');
+	wp_enqueue_style('custom-style-module-about-content', get_template_directory_uri() . '/css/style-module-about-content.css', array(), '1.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_style');
 
