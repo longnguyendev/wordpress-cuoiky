@@ -16,7 +16,18 @@
     font-size: 14px;
     background: rgb(0 0 0 / 3%);
     border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    width: fit-content;
 } 
+.top-job-section .row div.job_listings article .top {
+    display: flex;
+    width: 100%;
+    align-items: center;   
+}
+.top-job-section .row div.job_listings article .company-logo {
+    width: 150px;
+}
 .top-job-section .row div.job_listings article .company-name {
     font-size: 14px;
     color: black;

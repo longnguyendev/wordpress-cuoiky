@@ -12,6 +12,19 @@
  * @package JobScout
  */
 get_header(); ?>
+<script>
+   // Lấy phần tử <body>
+    var bodyElement = document.body;
+
+    // Kiểm tra xem class "rightsidebar" có tồn tại không
+    var hasRightSidebarClass = bodyElement.classList.contains("rightsidebar");
+
+    // Nếu class tồn tại, loại bỏ nó
+    if (hasRightSidebarClass) {
+        bodyElement.classList.remove("rightsidebar");
+        console.log("Removed 'rightsidebar' class");
+    }
+</script>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -35,5 +48,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
