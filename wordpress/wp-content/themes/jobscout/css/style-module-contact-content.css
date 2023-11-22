@@ -4,8 +4,20 @@
     padding: 0;
 }
 
+.hentry {
+    margin: 0;
+}
+
+:where(.wp-block-columns) {
+    margin: 0;
+}
+
 .module-contact-content section {
-    padding: 25px 0;
+    padding: 40px 0;
+}
+
+.module-contact-content section section {
+    padding: 0;
 }
 
 .module-contact-content .widget {
@@ -17,8 +29,8 @@
 }
 
 .module-contact-content .contact-content-1 p {
-    margin-bottom: 0;
-    font-size: 14px;   
+    font-size: 14px;
+    margin: 0; 
 }
 
 .module-contact-content h6 {
@@ -35,4 +47,7 @@
 .module-contact-content .contact-content-2 a {
    color: #ea751e;  
    text-decoration: underline;
+}
+.module-contact-content .contact-content-2 p:last-child {
+    margin: 0;
 }
